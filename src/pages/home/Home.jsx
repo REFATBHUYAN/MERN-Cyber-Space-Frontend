@@ -31,9 +31,9 @@ const Home = () => {
                 </div>
                 <div className="md:w-1/3 flex flex-col gap-5">
                   <PopularPost></PopularPost>
-                  <NeedWebsite></NeedWebsite>
+                  {/* <NeedWebsite></NeedWebsite>
                   <AllCatagory></AllCatagory>
-                  <EssentialPost></EssentialPost>
+                  <EssentialPost></EssentialPost> */}
                   <RecentComments></RecentComments>
                 </div>
               </div>

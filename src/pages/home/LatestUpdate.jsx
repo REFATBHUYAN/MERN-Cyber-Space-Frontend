@@ -22,7 +22,7 @@ const LatestUpdate = () => {
         <div>
           <h1 className="flex items-center gap-2">
             <BiRadioCircleMarked className="w-7 h-7 animate-ping delay-700"></BiRadioCircleMarked>{" "}
-            <span className="font-bold text-2xl">Latest Updates</span>
+            <span className="font-bold text-3xl">Latest Updates</span>
           </h1>
           <div className="my-3">
             <>
