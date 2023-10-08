@@ -1,29 +1,26 @@
 import React from "react";
-import Banner from "./Banner";
-import Popular from "./Popular";
+
 import Container from "../../components/Container";
 import LatestUpdate from "./LatestUpdate";
 import PopularPost from "./PopularPost";
-import NeedWebsite from "./NeedWebsite";
-import AllCatagory from "./AllCatagory";
 import RecentComments from "./RecentComments";
-import EssentialPost from "./EssentialPost";
 import EditorsChoice from "./EditorsChoice";
-import TreadingNow from "./TreadingNow";
-import HelpUs from "./HelpUs";
-import Features from "./Features";
 import Banner2 from "./Banner2";
-import SliderCatagory from "./SliderCatagory";
+import BusinessSection from "./BusinessSection";
+import EssentialSoft from "./EssentialSoft";
+import Benifits from "./Benifits";
 
 const Home = () => {
   return (
     <>
       <div>
         <>
-          <div>
+          <div className="bg-no-repeat bg-cover mx-auto" style={{
+        backgroundImage: "url(https://i.ibb.co/HYxjFfs/hero-bg.png)",
+      }}>
             <Banner2></Banner2>
           </div>
-          <div className="w-full bg-base-100">
+          <div className="w-full bg-base-200 py-16">
             <Container>
               <div className="flex flex-col sm:flex-row gap-5">
                 <div className="md:w-2/3">
@@ -40,9 +37,12 @@ const Home = () => {
             </Container>
           </div>
           <EditorsChoice></EditorsChoice>
-          <TreadingNow></TreadingNow>
+          <BusinessSection></BusinessSection>
+          <EssentialSoft></EssentialSoft>
+          <Benifits></Benifits>
+          {/* <TreadingNow></TreadingNow>
           <HelpUs></HelpUs>
-          <Features></Features>
+          <Features></Features> */}
         </>
       </div>
     </>

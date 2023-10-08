@@ -28,7 +28,7 @@ const LatestUpdate = () => {
             <>
               <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-4 my-4">
                 <img className="h-56 w-56 rounded-md" src="/idm.png" alt="" />
-                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-56">
+                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-full md:h-56">
                   <div className="flex gap-2">
                     <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
                       6.42.2
@@ -37,7 +37,7 @@ const LatestUpdate = () => {
                       WEB
                     </button>
                   </div>
-                  <button className="font-semibold text-lg text-slate-700 text-start hover:text-blue-700">
+                  <button className="font-semibold text-lg text-slate-700 dark:text-slate-50 text-start hover:text-blue-700">
                     Internet Download Manager
                   </button>
                   <p className="border-b border-b-slate-100 pb-5">
@@ -130,7 +130,7 @@ const LatestUpdate = () => {
               {/* 2 */}
               <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-4 my-4">
                 <img className="h-56 w-56 rounded-md" src="/mo.png" alt="" />
-                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-56">
+                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-full md:h-56">
                   <div className="flex gap-2">
                     <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
                       6.42.2
@@ -232,7 +232,7 @@ const LatestUpdate = () => {
               {/* 3 */}
               <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-4 my-4">
                 <img className="h-56 w-56 rounded-md" src="/pp.png" alt="" />
-                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-56">
+                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-full md:h-56">
                   <div className="flex gap-2">
                     <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
                       6.42.2
@@ -334,7 +334,7 @@ const LatestUpdate = () => {
               {/* 4 */}
               <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-4 my-4">
                 <img className="h-56 w-56 rounded-md" src="/wf.png" alt="" />
-                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-56">
+                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-full md:h-56">
                   <div className="flex gap-2">
                     <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
                       6.42.2
@@ -436,7 +436,7 @@ const LatestUpdate = () => {
               {/* 5 */}
               <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-4 my-4">
                 <img className="h-56 w-56 rounded-md" src="/w11.png" alt="" />
-                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-56">
+                <div className="flex flex-col gap-4 text-slate-400 max-w-[824px] h-full md:h-56">
                   <div className="flex gap-2">
                     <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
                       6.42.2

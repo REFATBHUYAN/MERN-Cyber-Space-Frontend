@@ -7,7 +7,6 @@ const SliderCatagory = () => {
   const settings = {
     className: "center",
     infinite: true,
-    prevArrow: <button>hi</button>,
     centerPadding: "24px",
     slidesToShow: 5,
     swipeToSlide: true,

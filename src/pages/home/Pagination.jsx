@@ -4,7 +4,7 @@ const Pagination = () => {
   return (
     <div>
       <nav
-        className="isolate inline-flex gap-2 rounded-md shadow-sm"
+        className="isolate md:inline-flex -space-x-px text-center flex flex-wrap gap-2 rounded-md shadow-sm"
         aria-label="Pagination"
       >
         <a

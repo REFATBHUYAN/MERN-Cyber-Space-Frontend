@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   BiUser,
@@ -14,10 +14,22 @@ import {
 import { FaQuestionCircle } from "react-icons/fa";
 import Container from "../../components/Container";
 import TopNote from "../../components/TopNote";
+import { ThemeContext } from "../../components/ThemeProvider";
 
 const Navbar = () => {
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const toglleTheme = (event) => {
+    const isChecked = event.target.checked;
+    // console.log(isChecked);
+    if (isChecked) {
+      setDarkMode(true);
+    } else {
+      setDarkMode(false);
+    }
+    // setDarkMode(!darkMode);
+  };
   return (
-    <div className="fixed w-full mx-auto z-10 top-0 bg-slate-50">
+    <div className="fixed w-full mx-auto z-10 top-0 bg-slate-50 dark:bg-black">
       {<TopNote></TopNote>}
       <Container>
         <div className="navbar ">
@@ -27,8 +39,8 @@ const Navbar = () => {
               className="normal-case text-xl flex items-center gap-2"
             >
               <img className="h-10 w-10" src="/cs-icon.svg" alt="" />
-              <span className="text-indigo-600 font-bold text-2xl font-unica stroke-black stroke-1">
-                SYBERSPACE
+              <span className="text-indigo-600 font-bold text-3xl font-unica stroke-black stroke-1">
+                CYBERSPACE
               </span>
             </Link>
           </div>
@@ -37,22 +49,45 @@ const Navbar = () => {
           </div>
           <div className="navbar-end text-slate-400">
             <button className="w-10 h-10 flex justify-center items-center rounded-md hover:bg-slate-100 hover:text-slate-700">
-              {/* <BiMoon className="w-6 h-6 text-slate-400 hover:text-slate-700 "></BiMoon> */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-moon w-6 h-6  "
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
-              </svg>
+              <label className="swap swap-rotate">
+                {/* this hidden checkbox controls the state */}
+                <input onChange={toglleTheme} type="checkbox" />
+
+                {/* sun icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon swap-on  icon-tabler icon-tabler-sun h-6 w-6"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                  <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+                </svg>
+
+                {/* moon icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon swap-off icon-tabler icon-tabler-moon w-6 h-6"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                </svg>
+              </label>
             </button>
             <div className="dropdown dropdown-end">
               <button
@@ -250,7 +285,6 @@ const Navbar = () => {
                         13 Oct 2023
                         <br /> 4.25 AM
                       </p>
-                      
                     </div>
                   </button>
                 </li>
@@ -276,7 +310,6 @@ const Navbar = () => {
                         13 Oct 2023
                         <br /> 4.25 AM
                       </p>
-                      
                     </div>
                   </button>
                 </li>

@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Popular from "./Popular";
 import SliderCatagory from "./SliderCatagory";
 
 const Banner2 = () => {
+  const [searchSuggestion, setSearchSuggestion] = useState(false);
   return (
     <div
-      className="hero"
-      style={{
-        // backgroundImage: "url(https://cdn.cultofandroid.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-17.19.51.jpg)",
-        backgroundImage: "url(https://i.ibb.co/HYxjFfs/hero-bg.png)",
-      }}
+      className="max-w-7xl mx-auto overflow-hidden"
+      // style={{
+      //   backgroundImage: "url(https://i.ibb.co/HYxjFfs/hero-bg.png)",
+      // }}
     >
-      <div className="hero-overlay bg-opacity-0"></div>
-      <div className="hero-content text-center text-neutral-content flex flex-col">
-        <div className="max-w-2xl text-slate-400 mb-2 mt-28">
-          <h1 className="font-extrabold text-3xl mb-9 text-slate-700">
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-7xl">
+          <h1 className="font-extrabold sm:text-xl md:text-3xl text-center mb-9 text-slate-700 mt-28">
             Hey, looking for something?
           </h1>
 
-          <form className="w-full md:w-[670px] h-12 mb-6">
+          <form className="w-80 md:w-full max-w-[670px] h-12 mx-auto relative">
             <label
               for="default-search"
               className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -44,9 +43,11 @@ const Banner2 = () => {
                 </svg>
               </div>
               <input
+              onFocus={() => setSearchSuggestion(true)}
+              onBlur={() => setSearchSuggestion(false)}
                 type="search"
                 id="default-search"
-                className="block w-full p-4 pl-12 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="block w-full p-4 pl-12 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50"
                 placeholder="Search for your desired software..."
                 required
               />
@@ -73,11 +74,122 @@ const Banner2 = () => {
                 </svg>
               </button>
             </div>
+            {searchSuggestion && (
+              <div className="z-50 absolute w-80 md:w-full max-w-[670px] mx-auto">
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                  <div className="flex gap-2">
+                    <img className="h-8 w-8 rounded-md" src="/idm.png" alt="" />
+                    <p className="font-medium text-slate-700 hover:text-blue-700">
+                      Internet Download Manager
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
+                      6.42.2
+                    </p>
+                    <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
+                      WEB
+                    </button>
+                  </div>
+                </div>
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                  <div className="flex gap-2">
+                    <img className="h-8 w-8 rounded-md" src="/mo.png" alt="" />
+                    <p className="font-medium text-slate-700 hover:text-blue-700">
+                      Microsoft Office 2021
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
+                      6.42.2
+                    </p>
+                    <button className="bg-indigo-50 text-indigo-700 uppercase rounded-md px-1 text-xs text-center border border-indigo-100">
+                      WINDOWS
+                    </button>
+                  </div>
+                </div>
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                  <div className="flex gap-2">
+                    <img className="h-8 w-8 rounded-md" src="/pp.png" alt="" />
+                    <p className="font-medium text-slate-700 hover:text-blue-700">
+                      Pot Player
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
+                      6.42.2
+                    </p>
+                    <button className="bg-pink-50 text-pink-700 uppercase rounded-md px-1 text-xs text-center border border-pink-100">
+                      MULTIMEDIA
+                    </button>
+                  </div>
+                </div>
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                  <div className="flex gap-2">
+                    <img className="h-8 w-8 rounded-md" src="/wf.png" alt="" />
+                    <p className="font-medium text-slate-700 hover:text-blue-700">
+                      Wondershare Filmora
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
+                      6.42.2
+                    </p>
+                    <button className="bg-red-50 text-red-700 uppercase rounded-md px-1 text-xs text-center border border-red-100">
+                      UTILITY
+                    </button>
+                  </div>
+                </div>
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                  <div className="flex gap-2">
+                    <img className="h-8 w-8 rounded-md" src="/w11.png" alt="" />
+                    <p className="font-medium text-slate-700 hover:text-blue-700">
+                      Windows 11 Pro
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="bg-indigo-50 text-indigo-700 rounded-md px-1 text-xs text-center border border-indigo-100">
+                      6.42.2
+                    </p>
+                    <button className="bg-indigo-50 text-indigo-700 uppercase rounded-md px-1 text-xs text-center border border-indigo-100">
+                      UTILITY
+                    </button>
+                  </div>
+                </div>
+                <div className="bg-base-100 py-1 rounded-b-md">
+                  <p className="flex items-center gap-1 p-2 text-slate-400 cursor-pointer">
+                    View all results{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l14 0"></path>
+                      <path d="M15 16l4 -4"></path>
+                      <path d="M15 8l4 4"></path>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+            )}
           </form>
-          <p>You can also browse our popular categories</p>
+
+          <p className="text-slate-400 mt-6">
+            You can also browse our popular categories
+          </p>
+
+          <div className="overflow-hidden">
+            <SliderCatagory></SliderCatagory>
+          </div>
         </div>
-        
-        <SliderCatagory></SliderCatagory>
       </div>
     </div>
   );
