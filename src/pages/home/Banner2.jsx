@@ -13,7 +13,7 @@ const Banner2 = () => {
     >
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-7xl">
-          <h1 className="font-extrabold sm:text-xl md:text-3xl text-center mb-9 text-slate-700 dark:text-slate-300 mt-28">
+          <h1 className="font-extrabold text-2xl md:text-3xl text-center mb-9 text-slate-700 dark:text-slate-300 mt-28">
             Hey, looking for something?
           </h1>
 

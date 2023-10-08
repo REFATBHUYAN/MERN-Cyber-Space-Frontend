@@ -45,7 +45,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <p className="text-sm text-slate-500 dark:text-slate-300">Home of pre-activated software!</p>
+            <p className="text-sm text-slate-500 dark:text-slate-300 border py-1 px-2 border-slate-100 rounded-md">Home of pre-activated software!</p>
           </div>
           <div className="navbar-end text-slate-400">
             <button className="w-10 h-10 flex justify-center items-center rounded-md hover:bg-slate-100 hover:text-slate-700">
@@ -114,7 +114,7 @@ const Navbar = () => {
               </button>
               <ul
                 tabIndex={0}
-                className="dropdown-content mt-4 z-[1] shadow bg-base-100 rounded-md w-96 text-slate-400"
+                className="dropdown-content mt-4 z-[1] shadow bg-base-100 rounded-md w-80 md:w-96 text-slate-400"
               >
                 <li className="pl-4 pt-3 hover:bg-base-100 rounded-md mb-2 h-11">
                   <div className="flex justify-between ">
