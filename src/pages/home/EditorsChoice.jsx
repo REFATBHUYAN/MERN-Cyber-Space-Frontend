@@ -28,9 +28,9 @@ const EditorsChoice = () => {
         </h1>
         <div className="flex flex-col md:flex-row  gap-4 my-5">
           <div className="w-full  md:w-2/5 mx-auto">
-            <div className="h-[504px] max-w-lg  overflow-hidden relative bg-gradient-to-b from-slate-50 to-slate-800 rounded-none mb-6">
+            <div className="h-[504px] max-w-lg rounded-2xl  overflow-hidden relative bg-gradient-to-b from-slate-50 to-slate-800  mb-6">
               <img
-                className="absolute rounded-none h-full w-full opacity-60"
+                className="absolute rounded-2xl p-0 h-full w-full opacity-60 "
                 src="/idm.png"
                 alt=""
               />

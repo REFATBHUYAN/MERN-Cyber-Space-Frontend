@@ -6,7 +6,7 @@ import TopNote from "../components/TopNote";
 
 const MainLayout = () => {
   return (
-    <div className="bg-base-100 ">
+    <div className="bg-slate-100 dark:bg-slate-800 ">
       <Navbar></Navbar>
       <div className="pt-24 mt-2">
         <Outlet></Outlet>

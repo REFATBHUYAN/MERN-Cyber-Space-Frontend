@@ -8,7 +8,7 @@ const ThemeProvider = ({ children }) => {
   const theme = darkMode ? "dark" : "light";
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-      <div data-theme={theme}>{children}</div>
+      <div className={theme}>{children}</div>
      
     </ThemeContext.Provider>
   );

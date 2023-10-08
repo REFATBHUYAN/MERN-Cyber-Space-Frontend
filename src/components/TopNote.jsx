@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const TopNote = () => {
     const [showAd, setShowAd] = useState(true);
   return (
-    <div className={ ` ${showAd ? "":"hidden"} relative max-w-full h-10 bg-indigo-600 flex items-center justify-center gap-1 text-white`}>
+    <div className={ ` ${showAd ? "":"hidden"} relative max-w-full h-10 bg-indigo-600 dark:bg-indigo-900 flex items-center justify-center gap-1 text-white`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-sparkles"
@@ -23,7 +23,7 @@ const TopNote = () => {
       <button onClick={() => setShowAd(false)} className="absolute right-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-x bg-indigo-900 w-6 h-6 rounded-md"
+          class="icon icon-tabler icon-tabler-x bg-indigo-900 dark:bg-indigo-900 w-6 h-6 rounded-md"
           width="24"
           height="24"
           viewBox="0 0 24 24"

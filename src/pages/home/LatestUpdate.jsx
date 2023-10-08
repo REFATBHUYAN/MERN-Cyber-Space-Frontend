@@ -22,7 +22,7 @@ const LatestUpdate = () => {
         <div>
           <h1 className="flex items-center gap-2">
             <BiRadioCircleMarked className="w-7 h-7 animate-ping delay-700"></BiRadioCircleMarked>{" "}
-            <span className="font-bold text-3xl">Latest Updates</span>
+            <span className="font-bold text-3xl text-slate-700 dark:text-slate-50">Latest Updates</span>
           </h1>
           <div className="my-3">
             <>
@@ -37,7 +37,7 @@ const LatestUpdate = () => {
                       WEB
                     </button>
                   </div>
-                  <button className="font-semibold text-lg text-slate-700 dark:text-slate-50 text-start hover:text-blue-700">
+                  <button className="font-semibold text-lg text-slate-700 dark:text-slate-50 text-start hover:text-blue-700 dark:hover:text-blue-700">
                     Internet Download Manager
                   </button>
                   <p className="border-b border-b-slate-100 pb-5">
@@ -139,7 +139,7 @@ const LatestUpdate = () => {
                       WINDOWS
                     </button>
                   </div>
-                  <button className="font-semibold text-lg text-start text-slate-700 hover:text-blue-700">
+                  <button className="font-semibold text-lg text-start text-slate-700 dark:text-slate-50 hover:text-blue-700 dark:hover:text-blue-700">
                     Microsoft Office 2021
                   </button>
                   <p className="border-b border-b-slate-100 pb-5">
@@ -241,7 +241,7 @@ const LatestUpdate = () => {
                       MULTIMEDIA
                     </button>
                   </div>
-                  <button className="font-semibold text-lg text-start text-slate-700 hover:text-blue-700">
+                  <button className="font-semibold text-lg text-start text-slate-700 dark:text-slate-50 hover:text-blue-700 dark:hover:text-blue-700">
                     Pot Player
                   </button>
                   <p className="border-b border-b-slate-100 pb-5">
@@ -343,7 +343,7 @@ const LatestUpdate = () => {
                       UTILITY
                     </button>
                   </div>
-                  <button className="font-semibold text-lg text-start text-slate-700 hover:text-blue-700">
+                  <button className="font-semibold text-lg text-start text-slate-700 dark:text-slate-50 hover:text-blue-700 dark:hover:text-blue-700">
                     Wondershare Filmora
                   </button>
                   <p className="border-b border-b-slate-100 pb-5">
@@ -445,7 +445,7 @@ const LatestUpdate = () => {
                       WINDOWS
                     </button>
                   </div>
-                  <button className="font-semibold text-lg text-start text-slate-700 hover:text-blue-700">
+                  <button className="font-semibold text-lg text-start text-slate-700 dark:text-slate-50 hover:text-blue-700 dark:hover:text-blue-700">
                     Windows 11 Pro
                   </button>
                   <p className="border-b border-b-slate-100 pb-5">

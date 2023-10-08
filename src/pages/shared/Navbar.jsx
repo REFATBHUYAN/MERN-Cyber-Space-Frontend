@@ -29,7 +29,7 @@ const Navbar = () => {
     // setDarkMode(!darkMode);
   };
   return (
-    <div className="fixed w-full mx-auto z-10 top-0 bg-slate-50 dark:bg-black">
+    <div className="fixed w-full mx-auto z-10 top-0 bg-slate-50 dark:bg-slate-800">
       {<TopNote></TopNote>}
       <Container>
         <div className="navbar ">
@@ -45,7 +45,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <p className="text-sm">Home of pre-activated software!</p>
+            <p className="text-sm text-slate-500 dark:text-slate-300">Home of pre-activated software!</p>
           </div>
           <div className="navbar-end text-slate-400">
             <button className="w-10 h-10 flex justify-center items-center rounded-md hover:bg-slate-100 hover:text-slate-700">

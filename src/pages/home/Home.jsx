@@ -20,7 +20,7 @@ const Home = () => {
       }}>
             <Banner2></Banner2>
           </div>
-          <div className="w-full bg-base-200 py-16">
+          <div className="w-full bg-slate-50 dark:bg-slate-700 py-16">
             <Container>
               <div className="flex flex-col sm:flex-row gap-5">
                 <div className="md:w-2/3">

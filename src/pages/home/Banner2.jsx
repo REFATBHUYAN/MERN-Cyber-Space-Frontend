@@ -13,7 +13,7 @@ const Banner2 = () => {
     >
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-7xl">
-          <h1 className="font-extrabold sm:text-xl md:text-3xl text-center mb-9 text-slate-700 mt-28">
+          <h1 className="font-extrabold sm:text-xl md:text-3xl text-center mb-9 text-slate-700 dark:text-slate-300 mt-28">
             Hey, looking for something?
           </h1>
 
@@ -76,7 +76,7 @@ const Banner2 = () => {
             </div>
             {searchSuggestion && (
               <div className="z-50 absolute w-80 md:w-full max-w-[670px] mx-auto">
-                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-indigo-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
                   <div className="flex gap-2">
                     <img className="h-8 w-8 rounded-md" src="/idm.png" alt="" />
                     <p className="font-medium text-slate-700 hover:text-blue-700">
@@ -92,7 +92,7 @@ const Banner2 = () => {
                     </button>
                   </div>
                 </div>
-                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-indigo-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
                   <div className="flex gap-2">
                     <img className="h-8 w-8 rounded-md" src="/mo.png" alt="" />
                     <p className="font-medium text-slate-700 hover:text-blue-700">
@@ -108,7 +108,7 @@ const Banner2 = () => {
                     </button>
                   </div>
                 </div>
-                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-indigo-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
                   <div className="flex gap-2">
                     <img className="h-8 w-8 rounded-md" src="/pp.png" alt="" />
                     <p className="font-medium text-slate-700 hover:text-blue-700">
@@ -124,7 +124,7 @@ const Banner2 = () => {
                     </button>
                   </div>
                 </div>
-                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-indigo-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
                   <div className="flex gap-2">
                     <img className="h-8 w-8 rounded-md" src="/wf.png" alt="" />
                     <p className="font-medium text-slate-700 hover:text-blue-700">
@@ -140,7 +140,7 @@ const Banner2 = () => {
                     </button>
                   </div>
                 </div>
-                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-base-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
+                <div className="flex border-b-[1px] border-slate-100 p-2 justify-between bg-indigo-100 items-center w-80 md:w-full max-w-[670px] mx-auto hover:bg-indigo-50">
                   <div className="flex gap-2">
                     <img className="h-8 w-8 rounded-md" src="/w11.png" alt="" />
                     <p className="font-medium text-slate-700 hover:text-blue-700">

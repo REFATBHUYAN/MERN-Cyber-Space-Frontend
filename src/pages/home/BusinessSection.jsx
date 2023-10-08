@@ -3,12 +3,12 @@ import Container from "../../components/Container";
 
 const BusinessSection = () => {
   return (
-    <div className="py-16 bg-base-200">
+    <div className="py-16 bg-slate-50 dark:bg-slate-700">
       <Container>
         <div className="flex flex-col md:flex-row gap-28 max-w-6xl mx-auto items-center">
           <img className="w-[420px] h-[320px]" src="/laptop.png" alt="" />
           <div className="max-w-[580px] space-y-5 text-slate-400">
-            <h1 className="text-3xl font-extrabold text-slate-700">
+            <h1 className="text-3xl font-extrabold text-slate-700 dark:text-slate-50">
               Wanna grow up your business?
             </h1>
             <p>

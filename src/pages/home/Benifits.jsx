@@ -3,7 +3,7 @@ import Container from "../../components/Container";
 
 const Benifits = () => {
   return (
-    <div className="pt-20 pb-20 bg-base-200">
+    <div className="pt-20 pb-20 bg-slate-50 dark:bg-slate-700">
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="flex flex-col justify-center items-center gap-3 text-slate-400 hover:text-indigo-700 ">
@@ -26,10 +26,10 @@ const Benifits = () => {
                 <path d="M12 12l0 2.5"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700 dark:text-slate-50 dark:hover:text-indigo-700">
               100% Secured
             </h1>
-            <p className="hover:text-slate-700">
+            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
               Virus free downloads from our server so that you don’t get
               malwares.
             </p>
@@ -54,10 +54,10 @@ const Benifits = () => {
                 <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700 dark:text-slate-50 dark:hover:text-indigo-700">
               Easy Installation
             </h1>
-            <p className="hover:text-slate-700">
+            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
               You just have to click once and the software will auto install
               itself.
             </p>
@@ -81,10 +81,10 @@ const Benifits = () => {
                 <path d="M10 9v6l5 -3z"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700 dark:text-slate-50 dark:hover:text-indigo-700">
               Auto Activation
             </h1>
-            <p className="hover:text-slate-700">
+            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
               The software will be auto activated during the installation.
             </p>
           </div>
@@ -109,10 +109,10 @@ const Benifits = () => {
                 <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
               </svg>
             </div>
-            <h1 className="font-semibold text-lg text-slate-700 hover:text-indigo-700">
+            <h1 className="font-semibold text-lg text-slate-700 dark:text-slate-50 dark:hover:text-indigo-700">
               Admin Support
             </h1>
-            <p className="hover:text-slate-700">
+            <p className="hover:text-slate-700 dark:hover:text-indigo-700">
               24/7 Admin support exclusively for our Pro users only.
             </p>
           </div>
@@ -120,14 +120,14 @@ const Benifits = () => {
       </Container>
       <Container>
         <div
-          className="hero min-h-[300px] rounded-md bg-slate-100 mt-20"
+          className="hero min-h-[300px] rounded-md bg-slate-100 dark:bg-slate-800 mt-20"
           style={{
             backgroundImage: "url(https://i.ibb.co/HYxjFfs/hero-bg.png)",
           }}
         >
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-[670px]">
-              <h1 className="mb-5 text-3xl font-bold text-slate-700">
+              <h1 className="mb-5 text-3xl font-bold text-slate-700 dark:text-slate-50">
                 Start your pro plan today!
               </h1>
               <p className="mb-5 text-slate-400">

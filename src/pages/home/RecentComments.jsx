@@ -10,7 +10,7 @@ const RecentComments = () => {
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-message-dots"
+            class="icon icon-tabler icon-tabler-message-dots dark:text-slate-50"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -26,26 +26,26 @@ const RecentComments = () => {
             <path d="M8 11l0 .01"></path>
             <path d="M16 11l0 .01"></path>
           </svg>
-          <span className="font-bold text-3xl">Recent Comments</span>
+          <span className="font-bold text-3xl text-slate-700 dark:text-slate-50">Recent Comments</span>
         </h1>
         <div>
           <div className="flex  items-center gap-3 my-4">
             <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-blue-700">Tanz</h1>
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Tanz</h1>
                 <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
                 02 Oct 2023
                 </button>
               </div>
-              <p className="text-slate-400">Internet Download Manager</p>
+              <p className="text-slate-400 ">Internet Download Manager</p>
             </div>
           </div>
           <div className="flex  items-center gap-3 my-4">
             <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-blue-700">Afroza</h1>
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Afroza</h1>
                 <button className="bg-orange-50 text-orange-700 uppercase rounded-md px-1 text-xs text-center border border-orange-100">
                 02 Oct 2023
                 </button>
@@ -57,7 +57,7 @@ const RecentComments = () => {
             <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-blue-700">Rokon</h1>
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Rokon</h1>
                 <button className="bg-red-50 text-red-700 uppercase rounded-md px-1 text-xs text-center border border-red-100">
                 02 Oct 2023
                 </button>
@@ -69,7 +69,7 @@ const RecentComments = () => {
             <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-blue-700">Lava</h1>
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Lava</h1>
                 <button className="bg-indigo-50 text-indigo-700 uppercase rounded-md px-1 text-xs text-center border border-indigo-100">
                 02 Oct 2023
                 </button>
@@ -81,7 +81,7 @@ const RecentComments = () => {
             <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-blue-700">Tontu</h1>
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Tontu</h1>
                 <button className="bg-green-50 text-green-700 uppercase rounded-md px-1 text-xs text-center border border-green-100">
                 02 Oct 2023
                 </button>
@@ -93,7 +93,7 @@ const RecentComments = () => {
             <img className="w-20 h-20 rounded-md" src="/user.svg" alt="" />
             <div>
               <div className="flex gap-3 mb-2">
-                <h1 className="font-semibold text-lg hover:text-blue-700">Xuel</h1>
+                <h1 className="font-semibold text-lg hover:text-indigo-700 dark:text-slate-100 dark:hover:text-indigo-700">Xuel</h1>
                 <button className="bg-blue-50 text-blue-700 uppercase rounded-md px-1 text-xs text-center border border-blue-100">
                 02 Oct 2023
                 </button>

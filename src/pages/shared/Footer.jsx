@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import { BiHeart } from "react-icons/bi";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // This provides a smooth scroll animation
+    });
+  };
   return (
     <div className="w-full mx-auto pb-10 bg-[#1E293B] relative">
       <Container>
@@ -212,7 +218,7 @@ const Footer = () => {
           </nav>
         </footer>
       </Container>
-      <a className="h-10 absolute right-6 bottom-14 cursor-pointer w-10 flex items-center justify-center rounded-md bg-slate-400 hover:bg-indigo-700">
+      <button onClick={scrollToTop}  className="h-10 absolute right-6 bottom-14 cursor-pointer w-10 flex items-center justify-center rounded-md bg-slate-400 hover:bg-indigo-700">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-chevron-up text-white"
@@ -228,7 +234,7 @@ const Footer = () => {
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
           <path d="M6 15l6 -6l6 6"></path>
         </svg>
-      </a>
+      </button>
     </div>
   );
 };
